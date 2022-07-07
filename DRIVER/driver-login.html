@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code </title>
+    <style> 
+body{
+    background-color: #DDD;
+}
+form {
+  
+  display: flex;
+  width: 50%;
+  border-radius: 7%;
+  height:434px;
+  margin: 10vh auto;
+  background-color:white;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 70%;
+  padding:1vh 0;
+  margin: 30px 0;
+  height:20px;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size:20px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #27cc18;
+  color: white;
+  padding: 2vh 0px;
+  margin-top:10vh;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 15%;
+  font-size: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Center the avatar image inside this container */
+
+
+/* Avatar image */
+img.avatar {
+  width:24vw;
+  
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  filter: brightness(50%)
+
+}
+/* Add padding to containers */
+
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.buatform {
+  
+  flex: 1;
+  border-bottom-left-radius: 10%;
+  /* margin: 50px;//buat jarak antara kedua kotak */
+  flex-basis: 20vw;
+  
+  text-align: center;
+  
+  
+}
+
+.buatform:first-child {
+  flex-basis:60vw;
+}
+
+
+.namename{
+    display:block;
+    padding-top:9vh;
+}
+.namename2{
+    display:block;
+    padding-top:10vh;
+}
+
+    
+    </style>   
+</head>
+<body>
+    
+<form action="driver.php" method="post"> 
+    
+  
+    <div class="buatform">
+    <h2 style="text-align: left; padding-left:2vw">LOG IN</h2>    
+    
+    
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit" name="login">Log in</button>
+    <label for="signup"><a href="driver-signup.html" style=" padding-left:10vh; color:black; text-decoration: none; font-weight: 600; ">SIGN UP</a></label>
+    </div>
+  <div class="buatform">
+      <img src="uber.jpg" alt="Avatar" class="avatar">
+  </div>
+
+</form>
+
+</body>
+</html>
